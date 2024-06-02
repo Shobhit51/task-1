@@ -1,8 +1,4 @@
-# vite-react-tailwindcss (template)
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vite-react-tailwindcss)
-
-## Run
 
 Install and start:
 
