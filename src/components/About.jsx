@@ -34,10 +34,10 @@ function About() {
                 <div className="leading-relaxed mb-4 text-lg ">
                   Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.
                 </div>
-                 <div className="text-slate-500 font-serif text-lg " >
+                 <div className="text-slate-500 mb-4  font-serif text-lg " >
                   Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.
                 </div>
-                <div className="text-slate-500 font-serif text-lg " >
+                <div className="text-slate-500  mb-4 font-serif text-lg " >
                   Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.
                 </div>
                  <div className="leading-relaxed mb-4 text-lg ">
