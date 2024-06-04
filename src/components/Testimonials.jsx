@@ -89,7 +89,7 @@ const Testimonials = () => {
           <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             {testimonials.map((testimonial, index) => (
               <div key={testimonial.id} className="w-full flex-none md:w-1/3 px-4">
-                <div className="p-4 border border-gray-200 border-opacity-60 rounded-lg bg-white">
+                <div className=" border border-gray-200 border-opacity-60 rounded-lg bg-white">
                   {testimonial.image && (
                     <img className="w-20 h-20 object-cover object-center mb-4 mt-4 mx-auto" src={testimonial.image} alt={testimonial.name} />
                   )}
