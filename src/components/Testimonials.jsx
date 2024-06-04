@@ -85,10 +85,10 @@ const Testimonials = () => {
       <div className="container px-5 py-24 mx-auto">
         <h1 className="text-center text-black text-4xl font-serif font-medium mb-14">What Our Clients Say</h1>
         
-        <div className="flex flex-wrap overflow-hidden -mx-4">
-          <div className="testimonial-slider" style={{ transform: `translateX(-${currentSlide * 100}%)`, transition: 'transform 0.5s' }}>
+        <div className="relative overflow-hidden w-full">
+          <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             {testimonials.map((testimonial, index) => (
-              <div key={testimonial.id} className="px-4 w-full md:w-1/3">
+              <div key={testimonial.id} className="w-full flex-none md:w-1/3 px-4">
                 <div className="p-4 border border-gray-200 border-opacity-60 rounded-lg bg-white">
                   {testimonial.image && (
                     <img className="w-20 h-20 object-cover object-center mb-4 mt-4 mx-auto" src={testimonial.image} alt={testimonial.name} />
