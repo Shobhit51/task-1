@@ -97,9 +97,12 @@ const Testimonials = () => {
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{testimonial.name}</h1>
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{testimonial.category}</h2>
                 </div>
-                <div className="p-6 text-center bg-green-200 flex-1" style={{ backgroundColor: 'rgb(93, 165, 133)' }}>
+{/*                 <div className="p-6 text-center bg-green-200 flex-1" style={{ backgroundColor: 'rgb(93, 165, 133)' }}>
                   <p className="leading-relaxed mb-3 text-white">{testimonial.testimonial}</p>
-                </div>
+                </div> */}
+                  <div className="text-center bg-green-200 flex-1" style={{ backgroundColor: 'rgb(93, 165, 133)' }}>
+  <p className="leading-relaxed mb-3 text-white">{testimonial.testimonial}</p>
+</div>
                 </div>
               </div>
             ))}
