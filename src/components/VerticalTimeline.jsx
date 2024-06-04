@@ -29,7 +29,7 @@ const VerticalTimeline = () => {
             {/* Year Column */}
             <div className="col-start-1 col-end-2 md:mx-auto relative">
               <div className="h-full w-full flex items-center justify-center">
-              <div className="text-xl font-bold pd-3">{item.year}</div>
+              <div className="text-xl font-bold  pd-3 mr-2">{item.year}</div>
             
               </div>
             </div>
