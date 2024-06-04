@@ -93,11 +93,13 @@ const Testimonials = () => {
                   {testimonial.image && (
                     <img className="w-20 h-20 object-cover object-center mb-4 mt-4 mx-auto" src={testimonial.image} alt={testimonial.name} />
                   )}
-                  <div className="text-center">
-                    <h1 className="text-lg font-medium text-gray-900 mb-2">{testimonial.name}</h1>
-                    <h2 className="text-xs font-medium text-gray-400 mb-2">{testimonial.category}</h2>
-                    <p className="leading-relaxed mb-4">{testimonial.testimonial}</p>
-                  </div>
+                 <div className="p-6 text-center bg-white">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{testimonial.name}</h1>
+                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{testimonial.category}</h2>
+                </div>
+                <div className="p-6 text-center bg-green-200 flex-1" style={{ backgroundColor: 'rgb(93, 165, 133)' }}>
+                  <p className="leading-relaxed mb-3 text-white">{testimonial.testimonial}</p>
+                </div>
                 </div>
               </div>
             ))}
