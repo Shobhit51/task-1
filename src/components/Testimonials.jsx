@@ -86,23 +86,25 @@ const Testimonials = () => {
       <div className="container px-5 py-24 mx-auto">
         <h1 className="text-center text-black text-4xl font-serif font-medium mb-14">What Our Clients Say</h1>
         
-        <div className="flex flex-wrap -m-4">
-          {testimonials.slice(currentSlide * testimonialsPerSlide, (currentSlide + 1) * testimonialsPerSlide).map((testimonial) => (
-            <div key={testimonial.id} className="p-4 w-full md:w-1/3 transition-opacity duration-500">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden flex flex-col items-center bg-white" style={{ minHeight: '300px' }}>
-                {testimonial.image && (
-                  <img className="w-20 h-20 object-cover object-center mb-4 mt-4" src={testimonial.image} alt={testimonial.name} />
-                )}
-                <div className="p-6 text-center bg-white">
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{testimonial.name}</h1>
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{testimonial.category}</h2>
-                </div>
-                <div className="p-6 text-center bg-green-200 flex-1" style={{ backgroundColor: 'rgb(93, 165, 133)' }}>
-                  <p className="leading-relaxed mb-3 text-white">{testimonial.testimonial}</p>
+           <div className="flex flex-wrap overflow-hidden -m-4">
+          <div className="testimonial-slider" style={{ transform: `translateX(-${currentSlide * (100 / testimonialsPerSlide)}%)` }}>
+            {testimonials.map((testimonial) => (
+              <div key={testimonial.id} className={`p-4 w-full md:w-1/${testimonialsPerSlide}`}>
+                <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden flex flex-col items-center bg-white" style={{ minHeight: '300px' }}>
+                  {testimonial.image && (
+                    <img className="w-20 h-20 object-cover object-center mb-4 mt-4" src={testimonial.image} alt={testimonial.name} />
+                  )}
+                  <div className="p-6 text-center bg-white">
+                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{testimonial.name}</h1>
+                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{testimonial.category}</h2>
+                  </div>
+                  <div className="p-6 text-center bg-green-200 flex-1" style={{ backgroundColor: 'rgb(93, 165, 133)' }}>
+                    <p className="leading-relaxed mb-3 text-white">{testimonial.testimonial}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="flex justify-center mt-4">
