@@ -82,8 +82,7 @@ const Testimonials = () => {
 
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto"><h1 className="text-center text-white text-4xl font-serif font-medium mb-14">What Our Clients Say</h1>
-        
+      <h1 className="text-center text-black text-4xl font-serif font-medium mb-14">What Our Clients Say</h1>  
         <div className="relative overflow-hidden w-full">
           <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             {testimonials.map((testimonial, index) => (
