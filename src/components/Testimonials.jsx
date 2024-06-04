@@ -4,71 +4,8 @@ import p3 from '../images/p3.png';
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const testimonials = [
-    {
-      id: 1,
-      category: 'CEO Kingsten',
-      name: 'Kevin Whatson',
-      testimonial: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis totam mollitia. Ab veniam maiores quasi.',
-      image: p3, 
-    },
-    {
-      id: 2,
-      category: 'CEO Kingsten',
-      name: 'Kevin Whatson',
-      testimonial: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis totam mollitia. Ab veniam maiores quasi.',
-      image: p3, 
-    },
-    {
-      id: 3,
-      category: 'CEO Kingsten',
-      name: 'Kevin Whatson',
-      testimonial: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis totam mollitia. Ab veniam maiores quasi.',
-      image: p3, 
-    },
-    {
-      id: 4,
-      category: 'CEO Kingsten',
-      name: 'Kevin Whatson',
-      testimonial: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.',
-      image: p3, 
-    },
-    {
-      id: 5,
-      category: 'CEO Kingsten',
-      name: 'Kevin Whatson',
-      testimonial: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.',
-      image: p3, 
-    },
-    {
-      id: 6,
-      category: 'Kingsten',
-      name: 'Kevin Whatson',
-      testimonial: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.',
-      image: p3, 
-    },
-    {
-      id: 7,
-      category: 'CEO Kingsten',
-      name: 'Kevin Whatson',
-      testimonial: 'Voluptatem facilis totam mollitia. Ab veniam maiores quasi.',
-      image: p3, 
-    },
-    {
-      id: 8,
-      category: 'CEO Kingsten',
-      name: 'Kevin Whatson',
-      testimonial: 'Voluptatem facilis totam mollitia. Ab veniam maiores quasi.',
-      image: p3, 
-    },
-    {
-      id: 9,
-      category: 'Kingsten',
-      name: 'Kevin Whatson',
-      testimonial: 'Voluptatem facilis totam mollitia. Ab veniam maiores quasi.',
-      image: p3, 
-    },
+    // Testimonial data
   ];
-  
   const testimonialsPerSlide = 3;
   const totalSlides = Math.ceil(testimonials.length / testimonialsPerSlide);
 
@@ -86,23 +23,23 @@ const Testimonials = () => {
       <div className="container px-5 py-24 mx-auto">
         <h1 className="text-center text-black text-4xl font-serif font-medium mb-14">What Our Clients Say</h1>
         
-        <div className="flex flex-wrap -m-4">
-          {testimonials.slice(currentSlide * testimonialsPerSlide, (currentSlide + 1) * testimonialsPerSlide).map((testimonial) => (
-            <div key={testimonial.id} className="p-4 w-full md:w-1/3 transition-opacity duration-500">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden flex flex-col items-center bg-white" style={{ minHeight: '300px' }}>
-                {testimonial.image && (
-                  <img className="w-20 h-20 object-cover object-center mb-4 mt-4" src={testimonial.image} alt={testimonial.name} />
-                )}
-                <div className="p-6 text-center bg-white">
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{testimonial.name}</h1>
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{testimonial.category}</h2>
-                </div>
-                <div className="p-6 text-center bg-green-200 flex-1" style={{ backgroundColor: 'rgb(93, 165, 133)' }}>
-                  <p className="leading-relaxed mb-3 text-white">{testimonial.testimonial}</p>
+        <div className="flex flex-wrap overflow-hidden -mx-4">
+          <div className="testimonial-slider" style={{ transform: `translateX(-${currentSlide * 100}%)`, transition: 'transform 0.5s' }}>
+            {testimonials.map((testimonial, index) => (
+              <div key={testimonial.id} className="px-4 w-full md:w-1/3">
+                <div className="p-4 border border-gray-200 border-opacity-60 rounded-lg bg-white">
+                  {testimonial.image && (
+                    <img className="w-20 h-20 object-cover object-center mb-4 mt-4 mx-auto" src={testimonial.image} alt={testimonial.name} />
+                  )}
+                  <div className="text-center">
+                    <h1 className="text-lg font-medium text-gray-900 mb-2">{testimonial.name}</h1>
+                    <h2 className="text-xs font-medium text-gray-400 mb-2">{testimonial.category}</h2>
+                    <p className="leading-relaxed mb-4">{testimonial.testimonial}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="flex justify-center mt-4">
