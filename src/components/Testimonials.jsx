@@ -81,7 +81,7 @@ const Testimonials = () => {
     setCurrentSlide(index);
   };
 
-  return (
+ return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
         <h1 className="text-center text-black text-4xl font-serif font-medium mb-14">What Our Clients Say</h1>
