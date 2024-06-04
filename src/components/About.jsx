@@ -14,7 +14,7 @@ function About() {
           </div>
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
             <h1 className="text-black  text-3xl mb-4   font-medium font-serif"> Our History</h1>
-            <p className="leading-relaxed font-sans mb-4 font-medium text-lg ">
+            <p className="leading-relaxed font-sans mb-4 text-lg ">
               Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY.
             </p>
             <VerticalTimeline />
@@ -25,7 +25,7 @@ function About() {
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mt-6 lg:mt-0">
             <h1 className="text-black  text-3xl mb-4   font-medium font-serif">Vision</h1>
-            <p className="text-slate-500 font-sans font-medium text-lg " >
+            <p className="text-slate-500 font-sans text-lg " >
               Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY.
             </p>
             <div className="relative pl-8 sm:pl-20 py-6 group">
