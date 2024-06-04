@@ -3,8 +3,70 @@ import p3 from '../images/p3.png';
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const testimonials = [
-    // Testimonial data
+   const testimonials = [
+    {
+      id: 1,
+      category: 'CEO Kingsten',
+      name: 'Kevin Whatson',
+      testimonial: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis totam mollitia. Ab veniam maiores quasi.',
+      image: p3, 
+    },
+    {
+      id: 2,
+      category: 'CEO Kingsten',
+      name: 'Kevin Whatson',
+      testimonial: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis totam mollitia. Ab veniam maiores quasi.',
+      image: p3, 
+    },
+    {
+      id: 3,
+      category: 'CEO Kingsten',
+      name: 'Kevin Whatson',
+      testimonial: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis totam mollitia. Ab veniam maiores quasi.',
+      image: p3, 
+    },
+    {
+      id: 4,
+      category: 'CEO Kingsten',
+      name: 'Kevin Whatson',
+      testimonial: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.',
+      image: p3, 
+    },
+    {
+      id: 5,
+      category: 'CEO Kingsten',
+      name: 'Kevin Whatson',
+      testimonial: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.',
+      image: p3, 
+    },
+    {
+      id: 6,
+      category: 'Kingsten',
+      name: 'Kevin Whatson',
+      testimonial: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.',
+      image: p3, 
+    },
+    {
+      id: 7,
+      category: 'CEO Kingsten',
+      name: 'Kevin Whatson',
+      testimonial: 'Voluptatem facilis totam mollitia. Ab veniam maiores quasi.',
+      image: p3, 
+    },
+    {
+      id: 8,
+      category: 'CEO Kingsten',
+      name: 'Kevin Whatson',
+      testimonial: 'Voluptatem facilis totam mollitia. Ab veniam maiores quasi.',
+      image: p3, 
+    },
+    {
+      id: 9,
+      category: 'Kingsten',
+      name: 'Kevin Whatson',
+      testimonial: 'Voluptatem facilis totam mollitia. Ab veniam maiores quasi.',
+      image: p3, 
+    },
   ];
   const testimonialsPerSlide = 3;
   const totalSlides = Math.ceil(testimonials.length / testimonialsPerSlide);
