@@ -44,7 +44,7 @@ const VerticalTimeline = () => {
             </div>
 
             {/* Event Content Column */}
-            <div className="col-start-3 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md  bg-gray-100">
+               <div className="col-start-3 col-end-12 p-4">
              
               <p className="leading-tight text-justify font-sans">{item.description}</p>
             </div>
