@@ -134,7 +134,7 @@ const Testimonials = () => {
               <path d="M9 5l6 6-6 6"/>
             </svg>
           </button>
-        </div>
+       
       </div>
     </section>
   );
