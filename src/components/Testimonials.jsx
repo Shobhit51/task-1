@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import p3 from '../images/p3.png';
 
@@ -82,7 +83,8 @@ const Testimonials = () => {
 
   return (
     <section className="text-gray-600 body-font">
-      <h1 className="text-center  text-4xl font-serif font-medium mb-14">What Our Clients Say </h1>  
+       <div className="container px-5 py-24 mx-auto">
+      <h1 className="text-center  text-4xl font-playfair   font-medium mb-14">What Our Clients Say </h1>  
         <div className="relative overflow-hidden w-full">
           <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             {testimonials.map((testimonial, index) => (
@@ -92,12 +94,13 @@ const Testimonials = () => {
                     <img className="w-20 h-20 object-cover object-center mb-4 mt-4 mx-auto" src={testimonial.image} alt={testimonial.name} />
                   )}
                  <div className="text-center bg-white">
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{testimonial.name}</h1>
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{testimonial.category}</h2>
+                  <h1 className="title-font text-lg font-medium  font-poppins text-gray-900 mb-3">{testimonial.name}</h1>
+                  <h2 className="tracking-widest text-xs title-font font-medium  font-poppins text-gray-400 mb-1">{testimonial.category}</h2>
                 </div>
-                <div className="p-6 text-center bg-green-200 flex-1" style={{ backgroundColor: 'rgb(93, 165, 133)' }}>
-                  <p className="leading-relaxed mb-3 text-white">{testimonial.testimonial}</p>
-                </div>
+                <div className="p-6 text-center bg-green-200 flex-1" style={{ backgroundColor: 'rgba(2, 67, 0, 0.53)' }}>
+  <p className="leading-relaxed mb-3 font-poppins text-white">{testimonial.testimonial}</p>
+</div>
+
              
                 </div>
               </div>
@@ -110,7 +113,7 @@ const Testimonials = () => {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-4 h-4 mx-1 rounded-full ${currentSlide === index ? 'bg-black' : 'bg-gray-500'}`}
+              className={`w-4 h-4 mx-1 rounded-full ${currentSlide === index ? 'bg-black' : 'bg-gray-300'}`}
             />
           ))}
         </div>
@@ -119,7 +122,7 @@ const Testimonials = () => {
           <button
             onClick={() => goToSlide(currentSlide - 1)}
             className="bg-gray-200 text-gray-600 rounded-full px-6 py-3 mr-4 border border-gray-400"
-            style={{ backgroundColor: "#649A82" }}
+            style={{ backgroundColor: 'rgba(2, 67, 0, 0.53)' }}
           >
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8" viewBox="0 0 24 24">
               <path d="M15 18l-6-6 6-6"/>
@@ -128,16 +131,17 @@ const Testimonials = () => {
           <button
             onClick={() => goToSlide(currentSlide + 1)}
             className="bg-gray-200 text-gray-600 rounded-full px-6 py-3 border border-gray-400"
-            style={{ backgroundColor: "#649A82" }}
+            style={{ backgroundColor: 'rgba(2, 67, 0, 0.53)' }}
           >
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8" viewBox="0 0 24 24">
               <path d="M9 5l6 6-6 6"/>
             </svg>
           </button>
-       
-      </div>
+        </div>
+        </div>
     </section>
   );
 };
 
 export default Testimonials;
+
