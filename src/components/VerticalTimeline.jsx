@@ -21,15 +21,15 @@ const timelineData = [
 
 const VerticalTimeline = () => {
   return (
-    <div className="container mx-auto p-4">
-      <div className="flex flex-col md:grid md:grid-cols-12 md:gap-4">
+    <div >
+      <div className="flex flex-col md:grid md:grid-cols-12 ">
         {timelineData.map((item, index) => (
           <div key={index} className="flex md:contents">
             
             {/* Year Column */}
             <div className="col-start-1 col-end-2 md:mx-auto relative">
               <div className="h-full w-full flex items-center justify-center">
-              <div className="text-xl  font-bold  pd-3 mr-3">{item.year}</div>
+              <div className="text-xl font-playfair font bold">{item.year}</div>
             
               </div>
             </div>
