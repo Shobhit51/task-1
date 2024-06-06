@@ -26,7 +26,7 @@ function About() {
           </div>
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
         <h1
-  className="text-black text-3xl mb-4 pb-2 font-medium font-playfair"
+
   style={{
     fontFamily: 'Playfair Display',
     fontSize: '30px',
