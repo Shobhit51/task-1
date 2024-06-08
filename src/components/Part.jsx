@@ -18,7 +18,7 @@ function Part() {
     <div  className="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
           style={{
             width: '100%',
-            height: '700px',
+            height: '900px',
             position: 'relative',
             left: '0px',
             gap: '0px',
@@ -66,12 +66,7 @@ function Part() {
                 <div style={{ display: 'inline-block', marginRight: '10px' }}>
                   <img src={p15} alt="Image 1" style={{ width: '100px', height: '100px', borderRadius: '5px' }} />
                 </div>
-                <div style={{ display: 'inline-block', marginRight: '10px' }}>
-                  <img src={p13} alt="Image 1" style={{ width: '100px', height: '100px', borderRadius: '5px' }} />
-                </div>
-                <div style={{ display: 'inline-block', marginRight: '10px' }}>
-                  <img src={p12} alt="Image 1" style={{ width: '100px', height: '100px', borderRadius: '5px' }} />
-                </div>
+              
           
               </div>
             </div>
