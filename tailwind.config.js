@@ -6,7 +6,6 @@ module.exports = {
       fontFamily: {
         'playfair': ['"Playfair Display"', 'serif'],
         'poppins': ['"Poppins"', 'sans-serif'],
-         'sans': ['Montserrat', 'sans-serif'],
       },
     },
   },
