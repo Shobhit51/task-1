@@ -5,7 +5,7 @@ import p6 from '../images/p6.png';
 import p4 from '../images/p4.png';
 import p5 from '../images/p5.png';
 import p7 from '../images/p7.png';
-import p8 from '../images/p8.png';
+
 import p9 from '../images/p9.png';
 import p13 from '../images/p13.png';
 import p15  from '../images/p15.png';
