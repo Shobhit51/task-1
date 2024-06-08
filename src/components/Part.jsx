@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-
+import p6 from '../images/p6.png';
 import p4 from '../images/p4.png';
 import p5 from '../images/p5.png';
 import p7 from '../images/p7.png';
