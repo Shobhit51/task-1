@@ -43,34 +43,34 @@ function Part() {
             <div className="container px-5 py-24 mx-auto">
               <div className="flex flex-wrap -m-5 text-center justify-center">
                 <div style={{ display: 'inline-block', marginRight: '10px' }}>
-                  <img src={p5} alt="Image 1" style={{ width: '80px', height: '100px', borderRadius: '5px' }} />
+                  <img src={p5} alt="Image 1" style={{ width: '100px', height: '100px', borderRadius: '5px' }} />
                 </div>
                 <div style={{ display: 'inline-block', marginRight: '10px' }}>
-                  <img src={p6} alt="Image 1" style={{ width: '80px', height: '100px', borderRadius: '5px' }} />
+                  <img src={p6} alt="Image 1" style={{  width: '100px', height: '100px', borderRadius: '5px' }} />
                 </div>
                 <div style={{ display: 'inline-block', marginRight: '10px' }}>
-                  <img src={p7} alt="Image 1" style={{ width: '80px', height: '100px', borderRadius: '5px' }} />
+                  <img src={p7} alt="Image 1" style={{ width: '100px', height: '100px', borderRadius: '5px' }} />
                 </div>
                 <div style={{ display: 'inline-block', marginRight: '10px' }}>
-                  <img src={p8} alt="Image 1" style={{ width: '80px', height: '100px', borderRadius: '5px' }} />
+                  <img src={p8} alt="Image 1" style={{ width: '100px', height: '100px', borderRadius: '5px' }} />
                 </div>
                 <div style={{ display: 'inline-block', marginRight: '10px' }}>
-                  <img src={p9} alt="Image 1" style={{ width: '80px', height: '100px', borderRadius: '5px' }} />
+                  <img src={p9} alt="Image 1" style={{ width: '100px', height: '100px', borderRadius: '5px' }} />
                 </div>
                 <div style={{ display: 'inline-block', marginRight: '10px' }}>
-                  <img src={p12} alt="Image 1" style={{ width: '80px', height: '100px', borderRadius: '5px' }} />
+                  <img src={p12} alt="Image 1" style={{  width: '100px', height: '100px', borderRadius: '5px' }} />
                 </div>
                 <div style={{ display: 'inline-block', marginRight: '10px' }}>
-                  <img src={p13} alt="Image 1" style={{ width: '80px', height: '100px', borderRadius: '5px' }} />
+                  <img src={p13} alt="Image 1" style={{ width: '100px', height: '100px', borderRadius: '5px' }} />
                 </div>
                 <div style={{ display: 'inline-block', marginRight: '10px' }}>
-                  <img src={p15} alt="Image 1" style={{ width: '80px', height: '100px', borderRadius: '5px' }} />
+                  <img src={p15} alt="Image 1" style={{  width: '100px', height: '100px', borderRadius: '5px' }} />
                 </div>
                 <div style={{ display: 'inline-block', marginRight: '10px' }}>
-                  <img src={p13} alt="Image 1" style={{ width: '80px', height: '100px', borderRadius: '5px' }} />
+                  <img src={p13} alt="Image 1" style={{  width: '100px', height: '100px', borderRadius: '5px' }} />
                 </div>
                 <div style={{ display: 'inline-block', marginRight: '10px' }}>
-                  <img src={p12} alt="Image 1" style={{ width: '80px', height: '100px', borderRadius: '5px' }} />
+                  <img src={p12} alt="Image 1" style={{  width: '100px', height: '100px', borderRadius: '5px' }} />
                 </div>
           
               </div>
