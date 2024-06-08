@@ -124,7 +124,7 @@ function Part() {
                 }}>
                   $123M
                 </div>
-                <div  style={{ width: '283px', height: '55px', fontFamily: 'Montserrat',  fontSize: '40px',, fontWeight: '800', lineHeight: '38.51px', textAlign: 'center', color: '#FFFFFF' }}>
+                <div  style={{ width: '283px', height: '55px', fontFamily: 'Montserrat', fontSize: '40px', fontWeight: '800', lineHeight: '38.51px', textAlign: 'center', color: '#FFFFFF' }}>
                   Funded
                 </div>
                 <div style={{ width: '60px', height: '10px', borderRadius: '10px', background: '#00E5FF', margin: '5px auto' }}></div>
@@ -151,7 +151,7 @@ function Part() {
                 }}>
                 456
                 </div>
-                <div  style={{ width: '283px', height: '55px', fontFamily: 'Montserrat',  fontSize: '40px', fontWeight: '800', lineHeight: '38.51px', textAlign: 'center', color: '#FFFFFF' }}>
+                <div  style={{ width: '283px', height: '55px', fontFamily: 'Montserrat', fontSize: '40px', fontWeight: '800', lineHeight: '38.51px', textAlign: 'center', color: '#FFFFFF' }}>
                   Partners
                 </div>
                 <div style={{ width: '60px', height: '10px', borderRadius: '10px', background: '#00E5FF', margin: '5px auto' }}></div>
@@ -162,7 +162,6 @@ function Part() {
             </div>
 
 </div>
-
 
 
 
