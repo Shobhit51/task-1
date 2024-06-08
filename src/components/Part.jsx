@@ -18,7 +18,7 @@ function Part() {
     <div  className="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
           style={{
             width: '100%',
-            height: '900px',
+            height: '800px',
             position: 'relative',
             left: '0px',
             gap: '0px',
